@@ -28,7 +28,8 @@ class Diamond
 
       if bytes_diference >= 1
         while bytes_diference != 0
-          lines <<  '_' * bytes_diference + char +  '_' + char + '_' * bytes_diference
+          underscore_count = ((initial_bytes_difennce - bytes_diference) * 2) - 1
+          lines <<  '_' * bytes_diference + char +  '_' * underscore_count.abs + char + '_' * bytes_diference
           bytes_diference -= 1
           char = char.next
         end
