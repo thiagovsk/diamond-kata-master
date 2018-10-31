@@ -1,0 +1,15 @@
+language: ruby
+
+script:
+  - ./bin/rspec
+
+rvm:
+  - 2.5.0
+notifications:
+  email:
+    recipients:
+      - thiagitosouza@hotmail.com
+
+branches:
+  only:
+    - master
